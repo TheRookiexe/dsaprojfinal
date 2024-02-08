@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file for styling -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Student Registration</h1>
+            <form method="post" action="register.php" class="registration-form"> <!-- Updated action attribute -->
+                <div class="form-group">
+                    <label for="username"><i class="fas fa-user"></i> Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password"><i class="fas fa-lock"></i> Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Register" class="btn btn-primary">
+                </div>
+            </form>
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </div>
+    </div>
+</body>
+</html>
